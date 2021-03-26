@@ -52,6 +52,7 @@ export default class Board extends React.Component<MyProps, MyState> {
   render(): JSX.Element {
     const { lists } = this.state;
     const { title } = this.state;
+    // const {board_id} = this.props.match.params;
     const allLists = lists.map((oneObj) => <List id={oneObj.id} title={oneObj.title} cards={oneObj.cards} />);
     return (
       <div className="mainBoard">
